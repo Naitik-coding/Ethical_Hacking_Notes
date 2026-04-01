@@ -1,1 +1,192 @@
+## 📖 What is an IP Address?
 
+An IP (Internet Protocol) address is a unique number assigned to every device connected to a network.
+
+It is used to:
+
+* Identify a device
+* Send and receive data
+
+👉 Example:
+192.168.1.1
+
+---
+
+## 🧠 How IP Address Works
+
+Every device in a network has an IP address.
+
+When you send data:
+
+* Your system → sends packets
+* Network → routes them
+* Destination IP → receives data
+
+👉 Works like a **home address for devices**
+
+---
+
+## 🔢 Types of IP Address
+
+### 🟢 IPv4
+
+* Format: 192.168.1.1
+* 32-bit address
+* Most commonly used
+
+---
+
+### 🟢 IPv6
+
+* Format: fe80::20c:29ff:fe0a:4205
+* 128-bit address
+* Used due to shortage of IPv4
+
+---
+
+## 🏠 Private vs Public IP
+
+### 🟢 Private IP
+
+Used inside local network (LAN)
+
+Ranges:
+
+* 192.168.x.x
+* 10.x.x.x
+* 172.16.x.x – 172.31.x.x
+
+👉 Cannot be accessed directly from internet
+
+---
+
+### 🌐 Public IP
+
+* Assigned by ISP
+* Used to communicate over internet
+
+---
+
+## 🔍 Structure of IPv4 Address
+
+Example:
+192.168.1.10
+
+Split into:
+
+* Network part → identifies network
+* Host part → identifies device
+
+---
+
+## 🧠 Important Terms
+
+### 🟢 Subnet Mask
+
+Defines network size
+
+Example:
+255.255.255.0
+
+👉 Means:
+
+* First 3 parts → network
+* Last part → host
+
+---
+
+### 🟢 Network Address
+
+First address in network
+
+Example:
+192.168.1.0
+
+---
+
+### 🟢 Broadcast Address
+
+Used to send data to all devices
+
+Example:
+192.168.1.255
+
+---
+
+### 🟢 Gateway
+
+Router IP used to access internet
+
+Example:
+192.168.1.1
+
+---
+
+## 📊 Example (Real Case)
+
+IP: 192.168.57.139
+Netmask: 255.255.255.0
+
+👉 Network:
+192.168.57.0
+
+👉 Broadcast:
+192.168.57.255
+
+👉 Usable range:
+192.168.57.1 – 192.168.57.254
+
+---
+
+## 💻 Commands Related
+
+* Show IP:
+  ifconfig
+
+* Modern alternative:
+  ip a
+
+---
+
+## 🧪 Practical
+
+Command used:
+ifconfig
+
+Findings:
+
+* My IP: 192.168.x.x
+* Network range identified
+* Used for scanning
+
+---
+
+## 📝 Key Notes
+
+* Every device must have unique IP
+* Private IP → inside network
+* Public IP → internet communication
+* Subnet mask defines network size
+* Always identify your IP before hacking tasks
+
+---
+
+## 🚀 Real Use in Ethical Hacking
+
+* Identify target network
+* Used in:
+
+  * Nmap scanning
+  * Network reconnaissance
+  * Enumeration
+
+👉 Example:
+nmap -sn 192.168.57.0/24
+
+---
+
+## 🔥 Mini Lab
+
+* Checked my IP using ifconfig
+* Identified network range
+* Prepared for network scan
